@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Assignment-3</title>
+</head>
+<body>
+
+  <script>
+
+    let input = prompt("How many times do you want to repeat the text?");
+
+    let count = parseInt(input);
+
+    if (isNaN(count) || count <= 0) {
+      document.write("Please enter a valid positive number.");
+    } else {
+        document.write("Reapeting the text - 'JavaScript' "+ count+ " times-----<br><br>");
+      for (let i = 0; i < count; i++) {
+        document.write("JavaScript<br>");
+      }
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Assignment-2</title>
+</head>
+<body>
+  
+  <script>
+ 
+    let input = prompt("Enter your marks (0-100):");
+    
+    let marks = parseFloat(input);
+
+    if (isNaN(marks) || marks < 0 || marks > 100) {
+      document.write("Invalid input. Please enter a number between 0 and 100.");
+    } else {
+    
+      if (marks >= 90) {
+        document.write("Grade: A");
+      } else if (marks >= 75) {
+        document.write("Grade: B");
+      } else if (marks >= 50) {
+        document.write("Grade: C");
+      } else {
+        document.write("Grade: F (Fail)");
+      }
+    }
+  </script>
+</body>
+</html>
