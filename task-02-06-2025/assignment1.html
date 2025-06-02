@@ -1,1 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Assignment-1</title>
+</head>
+<body>
+  
+  <script>
+    let input = prompt("Enter a number:");
+
+    let number = parseFloat(input);
+
+    
+    if (isNaN(number)) {    // isNaN ---Check if the input is a valid number
+      document.write("That's not a valid number.");
+    } else {
+      if (number > 0) {
+        document.write("This is a positive number.");
+      } else if (number < 0) {
+        document.write("This is a negative number.");
+      } else {
+        document.write("The number is zero.");
+      }
+    }
+  </script>
+
+</body>
+</html>
 
